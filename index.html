@@ -1094,6 +1094,136 @@ body::after{
 .cmd-trigger:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,201,126,0.05)}
 .cmd-trigger-key{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:0.1rem 0.4rem;font-size:0.58rem;margin-left:0.25rem}
 
+
+/* ══════════════════════════════════════
+   MOBILE RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav{padding:1rem 1.25rem}
+  .nav-menu{gap:0.5rem}
+  .nav-btn{display:none}
+  .nav-contact{padding:0.45rem 0.9rem;font-size:0.6rem;margin-left:0}
+
+  /* HERO */
+  .hero{padding:5rem 1.25rem 2rem}
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:2rem;
+    text-align:center;
+  }
+  .hero-photo-hero{
+    width:200px;height:240px;
+    margin:0 auto;
+    order:-1;
+  }
+  .hero-eyebrow{justify-content:center;font-size:0.6rem}
+  .hero-name{font-size:clamp(3rem,14vw,5rem);text-align:center}
+  .hero-sub{font-size:0.9rem;text-align:center;margin:0 auto 2rem}
+  .hero-row{align-items:center}
+  .hero-metrics{gap:1.25rem;justify-content:center;flex-wrap:wrap}
+  .hm{padding-left:0.75rem}
+  .hm-n{font-size:1.6rem}
+  .hero-links{flex-direction:column;align-items:center;width:100%}
+  .hl{width:100%;justify-content:center;text-align:center}
+  .scroll-hint{display:none}
+
+  /* MARQUEE */
+  .marquee-item{padding:0 1.5rem}
+  .marquee-num{font-size:1.1rem}
+  .marquee-txt{font-size:0.6rem}
+
+  /* SECTIONS */
+  .s{padding:4rem 1.25rem}
+  .s-h{font-size:2rem;margin-bottom:2rem}
+
+  /* ABOUT */
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .about-lead{font-size:1.3rem}
+  .about-big{font-size:1.3rem}
+
+  /* SKILLS */
+  .skills-grid{grid-template-columns:1fr 1fr}
+  .skills-bg .s{padding:3rem 1.25rem}
+  .skills-scroll{gap:0.75rem}
+  .skill-col{min-width:180px;padding:1.25rem}
+
+  /* RADAR */
+  .radar-wrap{grid-template-columns:1fr;gap:2rem}
+  .radar-canvas-wrap{order:-1}
+  #radarCanvas{width:280px !important;height:280px !important}
+  .radar-section .s{padding:3rem 1.25rem}
+  .radar-leg-name{min-width:70px;font-size:0.65rem}
+
+  /* EXPERIENCE */
+  .exp-item{
+    grid-template-columns:1fr;
+    gap:1rem;
+    padding:2rem 0;
+    padding-left:0 !important;
+    margin-left:0 !important;
+  }
+  .exp-title{font-size:1.2rem}
+  .exp-impacts{flex-wrap:wrap}
+  .exp-pts li{font-size:0.83rem}
+  .exp-stack{gap:0.3rem}
+
+  /* PROJECTS */
+  .proj-bg .s{padding:3rem 1.25rem}
+  .proj-grid{grid-template-columns:1fr;gap:1rem}
+  .proj-card{padding:1.5rem}
+
+  /* CONTACT */
+  .contact-inner{padding:4rem 1.25rem}
+  .contact-h{font-size:clamp(2.5rem,10vw,4rem)}
+  .contact-links{flex-direction:column;align-items:center}
+  .cl{width:100%;justify-content:center}
+
+  /* COMMAND PALETTE */
+  .cmd-overlay{padding-top:8vh;padding:8vh 1rem 0}
+  .cmd-box{max-width:100%}
+  .cmd-trigger{
+    bottom:1rem;
+    font-size:0.58rem;
+    padding:0.4rem 1rem;
+  }
+
+  /* SCROLL TOP */
+  .scroll-top{bottom:4.5rem;right:1rem;width:38px;height:38px;font-size:0.85rem}
+
+  /* FOOTER */
+  footer{
+    flex-direction:column;
+    gap:0.75rem;
+    text-align:center;
+    padding:1.5rem 1.25rem;
+  }
+  .ft-l{font-size:0.55rem}
+
+  /* INFO CARDS */
+  .info-v{font-size:0.72rem}
+  .info-k{font-size:0.52rem}
+
+  /* TICKER */
+  .ticker-item{padding:0 1rem}
+
+  /* HIDE AURORA on mobile for perf */
+  .aurora{display:none}
+}
+
+@media (max-width: 480px) {
+  .hero-name{font-size:clamp(2.5rem,13vw,4rem)}
+  .skills-grid{grid-template-columns:1fr}
+  .hero-metrics{gap:1rem}
+  .hm-n{font-size:1.4rem}
+  .hm-l{font-size:0.55rem}
+  .proj-card{padding:1.25rem}
+  .impact{font-size:0.58rem;padding:0.15rem 0.5rem}
+  .contact-h{font-size:2.2rem}
+  .cmd-footer{gap:0.75rem}
+}
+
 </style>
 </head>
 <body>
